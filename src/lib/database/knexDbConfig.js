@@ -1,6 +1,3 @@
-import 'dotenv/config';
-
-//const appConfig = require('../config/appConfig');
 import { appConfig } from '../config/appConfig';
 
 export const KnexConfig = {
