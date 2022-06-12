@@ -8,7 +8,9 @@
 		"preview": "svelte-kit preview",
 		"prepare": "svelte-kit sync",
 		"migration": "npx knex migrate:latest --knexfile ./src/lib/database/knexfile.js",
-		"rollback": "npx knex migrate:rollback --knexfile ./src/lib/database/knexfile.js"
+		"rollback": "npx knex migrate:rollback --knexfile ./src/lib/database/knexfile.js",
+		"make-seed": "npx knex seed:make dev --knexfile ./src/lib/database/knexfile.js",
+		"seed": "npx knex seed:run --knexfile ./src/lib/database/knexfile.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
