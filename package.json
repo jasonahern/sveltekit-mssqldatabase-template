@@ -6,7 +6,9 @@
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
-		"prepare": "svelte-kit sync"
+		"prepare": "svelte-kit sync",
+		"migration": "npx knex migrate:latest --knexfile ./src/lib/database/knexfile.js",
+		"rollback": "npx knex migrate:rollback --knexfile ./src/lib/database/knexfile.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",

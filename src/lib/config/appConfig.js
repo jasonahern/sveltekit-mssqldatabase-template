@@ -1,8 +1,9 @@
-import env from 'dotenv';
+import  env  from 'dotenv';
+import 'dotenv/config'
 env.config({ path: '../../../.env' });
 
 function loadEnvironmentVariable(keyname) {
-    //console.log(process.env);
+    //console.log(process.env[DB_CLIENT]);
     const envar = process.env[keyname];
     if (!envar) {
         throw new Error(`Must include ${keyname} as an environment variable.`);

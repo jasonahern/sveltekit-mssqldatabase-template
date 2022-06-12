@@ -1,4 +1,4 @@
-import { appConfig } from '../config/appConfig';
+import { appConfig } from '../config/appConfig.js';
 
 export const KnexConfig = {
   client: appConfig.dbClient,
