@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import env from 'dotenv';
+env.config({ path: '../../../.env' });
 
 function loadEnvironmentVariable(keyname) {
     //console.log(process.env);
